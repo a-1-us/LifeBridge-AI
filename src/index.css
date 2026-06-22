@@ -465,18 +465,18 @@ body {
   background: #03060c;
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius-sm);
-  flex: 1;
+  height: 350px;
   position: relative;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .map-svg {
   width: 100%;
   height: 100%;
-  min-height: 350px;
   background-color: #030712;
 }
 
@@ -487,9 +487,9 @@ body {
 }
 
 .map-water-body {
-  fill: #0c1c38;
-  stroke: #163261;
-  stroke-width: 1;
+  fill: #111e3b;
+  stroke: #2563eb;
+  stroke-width: 2;
 }
 
 .map-road {
@@ -498,19 +498,22 @@ body {
 }
 
 .map-road.safe {
-  stroke: rgba(16, 185, 129, 0.4);
-  stroke-width: 5;
+  stroke: var(--color-green);
+  stroke-width: 4.5;
+  opacity: 0.9;
 }
 
 .map-road.dangerous {
-  stroke: rgba(245, 158, 11, 0.5);
-  stroke-dasharray: 4, 4;
+  stroke: var(--color-orange);
+  stroke-dasharray: 6, 4;
   stroke-width: 4;
+  opacity: 0.95;
 }
 
 .map-road.flooded, .map-road.blocked {
-  stroke: rgba(239, 68, 68, 0.5);
-  stroke-width: 4;
+  stroke: var(--color-red);
+  stroke-width: 4.5;
+  opacity: 0.95;
 }
 
 .map-route-glowing {

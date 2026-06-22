@@ -87,11 +87,11 @@ export default function MapContainer({ activeScenario, mapData, reports, isSOSAc
       </div>
 
       <div className="map-canvas-container">
-        <svg viewBox="0 0 500 350" className="map-svg">
+        <svg viewBox="0 0 500 350" width="100%" height="350" className="map-svg">
           {/* Grid lines for tech aesthetics */}
           <defs>
             <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
-              <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255, 255, 255, 0.02)" strokeWidth="1" />
+              <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(6, 182, 212, 0.07)" strokeWidth="0.75" />
             </pattern>
           </defs>
           <rect width="100%" height="100%" fill="url(#grid)" />
@@ -137,7 +137,7 @@ export default function MapContainer({ activeScenario, mapData, reports, isSOSAc
 
           {/* User Location Pin */}
           <g transform={`translate(${userCoord.x}, ${userCoord.y})`}>
-            <circle r="7" fill="var(--color-cyan)" filter="drop-shadow(0 0 4px var(--color-cyan))" />
+            <circle r="7" fill="var(--color-cyan)" style={{ filter: 'drop-shadow(0 0 4px var(--color-cyan))' }} />
             <circle r="3" fill="#060913" />
             <text y="-12" textAnchor="middle" fill="var(--color-cyan)" fontSize="8" fontWeight="700">YOU</text>
           </g>
@@ -164,7 +164,7 @@ export default function MapContainer({ activeScenario, mapData, reports, isSOSAc
                   fill={node.type === 'hazard' ? '#121824' : color} 
                   stroke={color} 
                   strokeWidth="2" 
-                  filter={`drop-shadow(0 0 6px ${color})`} 
+                  style={{ filter: `drop-shadow(0 0 6px ${color})` }} 
                 />
                 
                 {node.type === 'hazard' && (

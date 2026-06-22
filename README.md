@@ -2,6 +2,9 @@
 
 ![LifeBridge AI Banner](./public/lifebridge_banner.png)
 
+## 📸 Dashboard Interface Demo
+![LifeBridge AI Dashboard Demo](./public/project_demo.png)
+
 **LifeBridge AI** is a premium, real-time emergency response platform designed to bridge the gap between citizens in distress and rescue organizations during major natural disasters (floods, earthquakes, cyclones) and accidents.
 
 Built as a responsive Single Page Application (SPA) using **React, Vite, and Vanilla CSS**, the platform incorporates advanced client-side telemetry simulation, interactive vector graphics routing, web audio emergency beacons, and automated response dispatching.
