@@ -2,8 +2,13 @@
 
 ![LifeBridge AI Banner](./public/lifebridge_banner.png)
 
-## 📸 Dashboard Interface Demo
-![LifeBridge AI Dashboard Demo](./public/project_demo.png)
+## 📸 Project Interface Demos
+
+### 1. Offline Vector Grid Mode (Zero Network Resilience)
+![LifeBridge AI Vector Mode](./public/project_demo.png)
+
+### 2. Live Satellite Geography Mode (Miami Sim Sector)
+![LifeBridge AI Satellite Mode](./public/satellite_demo.png)
 
 **LifeBridge AI** is a premium, real-time emergency response platform designed to bridge the gap between citizens in distress and rescue organizations during major natural disasters (floods, earthquakes, cyclones) and accidents.
 
