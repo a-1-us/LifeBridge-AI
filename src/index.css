@@ -1478,3 +1478,22 @@ body {
     opacity: 1;
   }
 }
+
+/* Custom Leaflet Popups Obsidian Theme */
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+  background: #090d16 !important;
+  color: #f8fafc !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5) !important;
+  font-family: 'Outfit', sans-serif !important;
+}
+.leaflet-container a.leaflet-popup-close-button {
+  color: #94a3b8 !important;
+}
+.leaflet-container a.leaflet-popup-close-button:hover {
+  color: #f8fafc !important;
+}
+.custom-leaflet-marker, .custom-leaflet-user {
+  background: transparent !important;
+  border: none !important;
+}
